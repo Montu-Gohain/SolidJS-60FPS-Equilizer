@@ -52,7 +52,7 @@ const RadialGraph: Component<{
     </g>
   );
 };
-
+alert("Click Once in your View.");
 const App: Component = () => {
   return (
     <div onClick={startFromFile} style='width: 100vw; height: 100vh;'>
@@ -64,6 +64,7 @@ const App: Component = () => {
         <RadialGraph color={interpolateSinebow} scale={2.5} />
         <RadialGraph color={interpolateInferno} scale={1.5} />
       </svg>
+      <span>Click Once</span>
     </div>
   );
 };
